@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Llama Facts</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="llama">
+        <h1>{{header}}</h1>
+        <ul>
+            <li v-for="item in items" :key="item.facts">{{facts}}</li>
+            <li v-if="noFact === true">No Llama Fact</li>
+        </ul>
+      
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
